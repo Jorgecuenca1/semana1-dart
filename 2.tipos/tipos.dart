@@ -55,7 +55,7 @@ void main() {
 
   print(listaSet);
   print(maps1);
-  maps1.forEach((as, value) {
-    print(as);
+  maps1.forEach((key, value) {
+    print(key);
   });
 }
