@@ -27,6 +27,24 @@ void main() {
   if (numero1 >= 5) {
     print("decir es igual o mayor a 5");
   }
+  List<String> lista1 = [texto11, texto6];
+  var lista2 = [lista1, texto6];
+  lista2.add("bmw");
+  var lista3 = ["chvrolet", ...lista1, ...lista2];
+  var listaSet = {'mazda', 'kia', 'renault', 'renault'};
+  List<dynamic> lista10 = [1, 2.0, "hola", true];
+  listaSet.add("mazdados");
+  listaSet.add("Hola");
+  listaSet.clear();
+  var maps1 = {
+    'red': 'rojo',
+    'blue': 'blue',
+  };
+  maps1.clear();
+  maps1['green'] = 'verde';
+
+  print(lista3);
+
   print(texto1);
   print(texto2);
   print(texto3);
@@ -34,4 +52,10 @@ void main() {
   print(texto9);
   print(texto10);
   print(texto11);
+
+  print(listaSet);
+  print(maps1);
+  maps1.forEach((as, value) {
+    print(as);
+  });
 }
